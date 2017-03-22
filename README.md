@@ -1,24 +1,12 @@
-# README
+## README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# ** taSk **
+_A self-destructing to-do list to keep you focused, motivated, and on taSk!_
 
-Things you may want to cover:
 
-* Ruby version
+taSk keeps your to-do lists manageable by automatically deleting to-do items that have not been completed after seven days. If the taSk is not important enough to be completed in seven days, it doesn't belong on your to-do list.
 
-* System dependencies
 
-* Configuration
+* Ruby 2.3.3
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails 5
