@@ -38,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass'
 gem 'figaro'
+# required to use render/assert_template testing
+gem 'rails-controller-testing'
 
 group :production do
     # pg for Heroku
@@ -53,7 +55,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'pry-rails'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'spring'
 end
 
@@ -62,6 +63,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'sqlite3'
+  gem 'web-console', '>= 3.3.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
