@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Devise for aunthentication
-# gem 'devise'
+gem 'devise'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass'
 gem 'figaro'
