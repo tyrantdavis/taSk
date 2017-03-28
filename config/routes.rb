@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :items
-  get 'users/show'
+  resources :users, only: [:show] do
+    resources :items, only: [:create] # add :edit, :update, :destroy 
+  end
 
   devise_for :users
 
