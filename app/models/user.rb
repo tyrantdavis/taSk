@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+  # Delete items owned by user when user is deleted
+  has_many :items, dependent: :destroy
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
