@@ -1,8 +1,8 @@
 <h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
 
-<%= current_user.inspect %>
-<br />
+<%#= current_user.inspect %>
 
-<b><%= current_user.email %></b>
-<p>Joined on: <%= current_user.created_at %></p>
+<p>USER NAME: <b><%= current_user.name %></b>!</p>
+<p>USER ID: <b><%= current_user.id %></b></p>
+<p>USER EMAIL: <b><%= current_user.email %></b></p>
+<p>JOINED ON:<b> <%= current_user.created_at %></b></p>
