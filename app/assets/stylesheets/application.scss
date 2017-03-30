@@ -20,12 +20,17 @@
 
 body {
 //    background: #CDDC39;
-    background: #A5D6A7;
+//    background: #A5D6A7;
+    background: #FFD54F;
 }
 
 html {
     height: 100%;
 }
 
-
-
+.nav ul {
+  list-style: none;
+  li {
+    background: transparent;
+  }
+}

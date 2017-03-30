@@ -1,8 +1,21 @@
-<h1>Users#show</h1>
+<h1>Users Info:</h1>
+<% @items = Item.all %>
 
-<%#= current_user.inspect %>
-
-<p>USER NAME: <b><%= current_user.name %></b>!</p>
+<p>USER NAME: <b><%= current_user.name %></b></p>
 <p>USER ID: <b><%= current_user.id %></b></p>
-<p>USER EMAIL: <b><%= current_user.email %></b></p>
-<p>JOINED ON:<b> <%= current_user.created_at %></b></p>
+
+<div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+  <%= render partial: 'items/form' %>
+
+  <table class="table">
+    <thead>
+      <th>Item</th>
+      <th>Days remaining</th>
+      <th></th>
+    </thead>
+    <tbody>
+      <%= render @items %>
+    </tbody>
+  </table>
+</div>

@@ -15,3 +15,6 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
+// Create a "close" button and append it to each list item
+ 
