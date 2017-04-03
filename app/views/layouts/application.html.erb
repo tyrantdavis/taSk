@@ -13,12 +13,22 @@
           <nav class="navbar navbar-inverse">
             <div class="container-fluid">
               <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
-                      </button>
-                      <a class="navbar-brand" id="taSknav" href="#">taSk!</a>
+                      </button> -->
+                    <ul>
+                      <li>
+                        <a class="navbar-brand" id="taSknav" href="#">taSk!</a></li>
+                      <li/>
+                      <!-- <li>
+                      <a href="new/user/registration"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a>
+                    </li> -->
+                    </ul>
               </div>
             </div>
           </nav>
@@ -32,7 +42,10 @@
                      </li>
               <% else %>
                   <li>
-                    <%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link'  %> -
+                          <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li> -->
+
+                    <%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link glyphicon '  %> |
                     <%= link_to "Sign In", new_user_session_path, :class => 'navbar-link'  %>
                   </li>
               <% end %>
