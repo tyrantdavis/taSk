@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
         format.html { redirect_to current_user, notice: 'Item was successfully created.' }
         format.json {}
       else
-        format.html { redirect_to current_userr, notice: 'Item was not successfully created.'  }
+        format.html { redirect_to current_user, notice: 'Item was not successfully created.'  }
         format.json { render json: @item.errors, status: :unprocessable_entity }
       end
     end

@@ -1,4 +1,9 @@
+<div class="form-group">
 <%= form_for @item do |f| %>
-  <%= f.text_field :name %>
-  <%= f.submit "Add", class: "addBtn" %>
+
+    <%= f.text_field :name %>
+    <%= f.submit "Add", class: "addBtn" %>
+    <div class="addListBtn glyphicon glyphicon-th-list blackText"></div>
+
 <% end %>
+</div>

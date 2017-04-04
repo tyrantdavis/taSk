@@ -1,21 +1,27 @@
-<h1>Users Info:</h1>
+<!-- <h1>User Info:</h1> -->
 <% @items = Item.all %>
 
-<p>USER NAME: <b><%= current_user.name %></b></p>
-<p>USER ID: <b><%= current_user.id %></b></p>
+<!-- <h1>HELLO: <b><%= current_user.name %></b>!</h1> -->
+<h1 class="center">HELLO: <b><%= current_user.name %></b>!</h1>
+
 
 <div id="myDIV" class="header">
-  <h2>My taSks</h2>
+  <h2 class="center"><b><%= current_user.items.count %></b> taSks</h2>
+
   <%= render partial: 'items/form' %>
 
-  <table class="table">
-    <thead>
-      <th>Item</th>
-      <th>Days remaining</th>
-      <th></th>
+  <table id="tableBorder" class="table table-striped table-condensed table-responsive" >
+    <thead class="thRight">
+    <tr>
+      <th>taSk</th>
+      <th class="shrinkColumn">Days remaining</th>
+      <th class="shrinkColumn"> Edit / Delete</th>
+    </tr>
     </thead>
     <tbody>
+      <tr>
       <%= render @items %>
+    </tr>
     </tbody>
   </table>
 </div>
