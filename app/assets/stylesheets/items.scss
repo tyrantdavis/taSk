@@ -15,20 +15,20 @@
 // }
 //
 // /* Styles the list items. Signed In As, Eidt Profile, Sign Out */
-// ul li {
-//   cursor: pointer;
-//   position: relative;
-//   padding: 12px 8px 12px 40px;
-//   background: #eee;
-//   font-size: 18px;
-//   transition: 0.2s;
-//
-//   /* make the list items unselectable */
-//   -webkit-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-//   user-select: none;
-// }
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 //
 // /* Set all odd list items to a different color (zebra-stripes) */
 // ul li:nth-child(odd) {
@@ -84,24 +84,24 @@
   color: black;
   text-align: center;
 }
-//
-/* Clear floats after the header */
-// .header:after {
-//   content: "";
-//   display: table;
-//   clear: both;
-// }
-//
-/* Style the input */
-input {
+// //
+// /* Clear floats after the header */
+// // .header:after {
+// //   content: "";
+// //   display: table;
+// //   clear: both;
+// // }
+// //
+// /* Style the input */
+.input {
   border: none;
   width: 50%;
   padding: 10px;
   float: left;
   font-size: 18px;
 }
-//
-// /* Style the "Add" button */
+// //
+// // /* Style the "Add" button */
 .addBtn {
   padding: 9px 0px 9px 0px;
   width: 25%;
@@ -118,8 +118,8 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
-
-
+//
+//
 .addListBtn {
   padding: 9px 0px 9px 0px;
   width: 25%;
