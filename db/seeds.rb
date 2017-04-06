@@ -1,25 +1,23 @@
 require 'faker'
 
+# Create member
+    member = User.create(
+    name: "member",
+    email: "member@example.com",
+    password: "password"
+  )
+
+
 # Create Users
 5.times do
-  user = User.new(
-    name:     Faker::Name.name,
-    email:    Faker::Internet.email,
-    password: Faker::Lorem.characters(10)
+  user = User.create(
+    name:  Faker::Name.name,
+    email:  Faker::Internet.email,
+    password: "password"
   )
-  user.skip_confirmation!
-  user.save!
 end
 users = User.all
 
-# Create test member
-  member = User.new(
-    name: "test",
-    email: "test@example.com",
-    password: "password"
-  )
-  member.skip_confirmation!
-  member.save!
 
 # Create Items
   10.times do

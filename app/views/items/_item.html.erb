@@ -1,6 +1,13 @@
 <tr>
   <td class="iTem"><%= item.name %></td>
   <td></td>
-  <td class="glyphicon glyphicon-edit removeGlyphRowLine"></td>
-  <td class="glyphicon glyphicon-trash removeGlyphRowLine"></td>
+  <!-- Edit button WIP -->
+  <!-- <td>
+  <%= link_to "", item, method: :edit, class: "glyphicon glyphicon-edit" %>
+  </td> -->
+  <td>
+    <% if current_user %>
+    <%= link_to "", item, method: :delete, class: 'glyphicon glyphicon-remove blackText' %>
+    <% end %>
+  </td>
 </tr>
