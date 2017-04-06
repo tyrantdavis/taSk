@@ -1,6 +1,10 @@
 <tr>
   <td class="iTem"><%= item.name %></td>
-  <td></td>
+  <td>
+    <% from_time = item.created_at %>
+    <% to_time = item.created_at + 7.days %>
+    <%= distance_of_time_in_words(from_time, to_time ) %> left <br>
+  </td>
   <!-- Edit button WIP -->
   <!-- <td>
   <%= link_to "", item, method: :edit, class: "glyphicon glyphicon-edit" %>
