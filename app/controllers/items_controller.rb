@@ -20,6 +20,7 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.json
   def destroy
+    @item = current_user.items.find(params[:id])
     @item.destroy
     respond_to do |format|
       format.html { redirect_to current_user, notice: 'Item was successfully destroyed.' }
