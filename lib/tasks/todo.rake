@@ -1,7 +1,6 @@
-namespace :todo do
-  desc "Delete items older than seven days"
+namespace :task do
+  desc "Delete tasks older than seven days"
   task delete_items: :environment do
-    Item.where("created_at <= ?", Time.now - 7days).destroy_all
+    Item.where("created_at <= ?", Time.now - 7.days).destroy_all
   end
-
 end
