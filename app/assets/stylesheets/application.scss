@@ -33,3 +33,39 @@ html {
   // border-right: 0px;
   // float: right;
 }
+
+/* Text transformations */
+  /*  Colors */
+.white-text { color: white; }
+
+.grey-text { color: #4d6066; }
+
+.blackText { color: #204156; }
+
+.redText { color: #D81159; }
+
+/* Strike through */
+.strkeThrough { text-decoration: line-through; }
+
+  /* Case */
+.uppercase { text-transform: uppercase; }
+
+.lowercase { text-transform: lowercase; }
+
+.capitalize { text-transform: capitalize; }
+
+.centerText {
+  text-align: center;
+}
+
+#blackBg {
+  background-color: black;
+}
+
+.linkSize {
+  color: grey-text;
+}
+
+.text-space {
+  letter-spacing: 3px;
+}

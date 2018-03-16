@@ -3,13 +3,9 @@
   <td>
     <%= distance_of_time_in_words(Time.now, item.created_at + 7.days ) %> left <br>
   </td>
-  <!-- Edit button WIP -->
-  <!-- <td>
-  <%= link_to "", item, method: :edit, class: "glyphicon glyphicon-edit" %>
-  </td> -->
   <td>
     <% if current_user %>
-    <%= link_to "", item, method: :delete, class: 'glyphicon glyphicon-remove blackText' %>
+    <%= link_to "And Done!", item, method: :delete, class: 'btn btn-danger', autofoucs: true %>
     <% end %>
   </td>
 </tr>

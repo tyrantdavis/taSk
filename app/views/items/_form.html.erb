@@ -1,9 +1,6 @@
 <%= form_for @item do |f| %>
-<div class="form-group">
-
-    <%= f.text_field :name, class:"input" %>
-    <%= f.submit "Add", class: "addBtn" %>
-    <!-- <div class="addListBtn glyphicon glyphicon-th-list blackText"></div> -->
-
+<div class="form-group" >
+    <%= f.text_field :name, class:"input form-control text-space", autofoucs: true %>
+    <%= f.submit "Add", class: "addBtn text-space btn btn-default btn-block bg" %>
 <% end %>
 </div>
