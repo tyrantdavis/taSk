@@ -5,7 +5,7 @@ _A self-destructing to-do list to keep you focused, motivated, and on taSk!_
 
  * Incorporates AJAX to delete expired tasks and a custom Rake task to automate deletions.
   
- * Implements Devise, Pundit, Bootstrap, Faker, Figaro, PostGreSQL, Send Grid, Factory Girls.
+ * Implements Devise, Bootstrap, Faker, Figaro, PostGreSQL, Send Grid, Factory Girls.
   
 ---
 ![image](https://user-images.githubusercontent.com/14861025/49536625-9db82100-f88c-11e8-9835-1f1dfae7a9b2.png)
